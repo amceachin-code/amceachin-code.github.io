@@ -33,7 +33,7 @@ def test_menu_links_to_tools_page():
 
 def test_page_links_each_tool_by_repo_path():
     text = (TOOLS_DIR / "_index.md").read_text()
-    for repo in ["grade-inflation", "multiplication-worksheet"]:
+    for repo in ["grade-inflation", "multiplication-worksheet", "times-tables-games"]:
         assert f"](/{repo}/)" in text
     # Only the worksheets show their repo; grade-inflation links to the tool alone.
     assert "https://github.com/amceachin-code/multiplication-worksheet" in text
