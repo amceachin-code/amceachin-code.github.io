@@ -1,0 +1,21 @@
+name: Enforce HTTPS on GitHub Pages
+
+# One-off, manually triggered maintenance workflow. Turns on "Enforce HTTPS"
+# in the repository's GitHub Pages settings and prints the resulting config.
+on:
+  workflow_dispatch:
+
+permissions:
+  pages: write
+
+jobs:
+  enforce-https:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable Enforce HTTPS
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api -X PUT "repos/${GITHUB_REPOSITORY}/pages" -F https_enforced=true
+          echo "Resulting Pages configuration:"
+          gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '{cname, https_enforced, status, "protected_domain_state": .protected_domain_state, "https_certificate_state": .https_certificate.state}'
