@@ -44,3 +44,11 @@ def test_page_links_division_worksheet():
     # The division tool lives in a subfolder of the multiplication-worksheet repo.
     text = (TOOLS_DIR / "_index.md").read_text()
     assert "](/multiplication-worksheet/division/)" in text
+
+
+def test_page_links_color_by_number_under_math_worksheets():
+    # Color by Number lives in a subfolder of the multiplication-worksheet repo
+    # too, and belongs with the other worksheets.
+    text = (TOOLS_DIR / "_index.md").read_text()
+    section = text.split("## Math Worksheets", 1)[1].split("\n## ", 1)[0]
+    assert "](/multiplication-worksheet/color-by-number/)" in section

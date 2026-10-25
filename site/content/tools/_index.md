@@ -34,6 +34,11 @@ Pick the times tables and the number of problems, then print.\
 Pick the numbers to divide by and the range of answers, then print. Every answer is a whole number.\
 **Open the tool:** [Division Worksheets](/multiplication-worksheet/division/)
 
+### Color by Number {.tool-heading}
+
+Pick the times tables and a picture, then print. Students solve each problem, then color its space by the answer to finish the picture.\
+**Open the tool:** [Color by Number](/multiplication-worksheet/color-by-number/)
+
 **Want your own copy?** The code is free on [GitHub](https://github.com/amceachin-code/multiplication-worksheet). You can download it to use offline, see how it works, or suggest a change.
 
 ## Times Tables Games {.tool-heading}
