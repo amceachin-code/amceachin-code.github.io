@@ -34,6 +34,12 @@
 % Lists
 \usepackage{enumitem}
 \setlist[itemize]{nosep, left=0pt}
+% Countdown numbering: \revarabic* prints (\revtotal + 1 - k) for item k.
+% Arithmetic placed directly in an enumitem label is not evaluated, so the
+% style is registered as a counter; the 99 sets the widest label.
+\newcommand*{\revtotal}{0}
+\newcommand*{\revarabic}[1]{\number\numexpr\revtotal + 1 - \value{#1}\relax}
+\AddEnumerateCounter{\revarabic}{\revarabic}{99}
 
 % Section formatting
 \usepackage{titlesec}
@@ -121,9 +127,17 @@
 <% set journal_pubs = filter_pubs_by_type(publications, 'journal') %>
 <% if journal_pubs %>
 \section{Peer-Reviewed Journal Articles}
-\begin{enumerate}[leftmargin=2em]
+<# A leading # marks alphabetical authorship. The key sits under the heading rather
+   in it, because section titles are uppercased and the longer title wraps. It only
+   appears when at least one article uses the marker. #>
+<% if journal_pubs|selectattr('alphabetical')|list %>
+\noindent{\small\# = Alphabetical authorship}
+<% endif %>
+<# Count down from N so the newest article carries the highest number. #>
+\renewcommand*{\revtotal}{<< journal_pubs|length >>}
+\begin{enumerate}[leftmargin=2em, label=\revarabic*.]
 <% for pub in journal_pubs|sort(attribute='year', reverse=true) %>
-  \item << format_authors(pub.authors)|latex_escape >> (<% if pub.status and pub.status.lower() == 'accepted' %><< pub.status|latex_escape >><% else %><< pub.year >><% endif %>).
+  \item <% if pub.alphabetical %>\#<% endif %><< format_authors(pub.authors)|latex_escape >> (<% if pub.status and pub.status.lower() == 'accepted' %><< pub.status|latex_escape >><% else %><< pub.year >><% endif %>).
   ``<< pub.title|latex_escape >>.''
   \textit{<< pub.journal|latex_escape >>}%
 <% if pub.volume %>, << pub.volume|latex_escape >><% endif %>%

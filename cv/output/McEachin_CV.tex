@@ -14,6 +14,12 @@
 % Lists
 \usepackage{enumitem}
 \setlist[itemize]{nosep, left=0pt}
+% Countdown numbering: \revarabic* prints (\revtotal + 1 - k) for item k.
+% Arithmetic placed directly in an enumitem label is not evaluated, so the
+% style is registered as a counter; the 99 sets the widest label.
+\newcommand*{\revtotal}{0}
+\newcommand*{\revarabic}[1]{\number\numexpr\revtotal + 1 - \value{#1}\relax}
+\AddEnumerateCounter{\revarabic}{\revarabic}{99}
 
 % Section formatting
 \usepackage{titlesec}
@@ -97,22 +103,24 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 
 % --- Publications: Journal Articles ---
 \section{Peer-Reviewed Journal Articles}
-\begin{enumerate}[leftmargin=2em]
-  \item Callen, I., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., \& Morton, E. (Accepted).
+\noindent{\small\# = Alphabetical authorship}
+\renewcommand*{\revtotal}{38}
+\begin{enumerate}[leftmargin=2em, label=\revarabic*.]
+  \item \#Callen, I., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., \& Morton, E. (Accepted).
   ``Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity.''
   \textit{Economics of Education Review}%
 %
 %
 .
 
-  \item Bolyard, A., DeArmond, M., Dizon-Ross, E., Goldhaber, D., Isaacs, J., Kane, T., Keating, M., Klinenberg, J., McDonald, A., McEachin, A., Morton, E., Muroga, A., Salazar, A., \& Staiger, D.O. (Accepted).
+  \item \#Bolyard, A., DeArmond, M., Dizon-Ross, E., Goldhaber, D., Isaacs, J., Kane, T., Keating, M., Klinenberg, J., McDonald, A., McEachin, A., Morton, E., Muroga, A., Salazar, A., \& Staiger, D.O. (Accepted).
   ``Summer School as an Academic Recovery Strategy After COVID-19: Evidence From Summer 2023.''
   \textit{Education Finance and Policy}%
 %
 %
 .
 
-  \item Carbonari, M.V., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., Morton, E., Muroga, A., Salazar, A., \& Staiger, D.O. (2026).
+  \item \#Carbonari, M.V., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., Morton, E., Muroga, A., Salazar, A., \& Staiger, D.O. (2026).
   ``Impacts of Academic Recovery Interventions on Student Achievement in 2022 to 2023.''
   \textit{Educational Evaluation and Policy Analysis}%
 , 48%
@@ -126,7 +134,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 %
 .
 
-  \item Callen, I., Carbonari, M.V., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Isaacs, J., Kane, T.J., Kuhfeld, M., McDonald, A., McEachin, A., Morton, E., Muroga, A., \& Staiger, D.O. (2025).
+  \item \#Callen, I., Carbonari, M.V., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Isaacs, J., Kane, T.J., Kuhfeld, M., McDonald, A., McEachin, A., Morton, E., Muroga, A., \& Staiger, D.O. (2025).
   ``Summer School as a Learning Loss Recovery Strategy After COVID-19: Evidence from Summer 2022.''
   \textit{American Educational Research Journal}%
 , 62%
@@ -147,7 +155,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 (2)%
 , 278-305.
 
-  \item Carbonari, M.V., Davison, M., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Hashim, A., Kane, T.J., McEachin, A., Morton, E., Patterson, T., \& Staiger, D.O. (2024).
+  \item \#Carbonari, M.V., Davison, M., DeArmond, M., Dewey, D., Dizon-Ross, E., Goldhaber, D., Hashim, A., Kane, T.J., McEachin, A., Morton, E., Patterson, T., \& Staiger, D.O. (2024).
   ``The Impact and Implementation of Academic Interventions During COVID-19: Evidence from the Road to Recovery Project.''
   \textit{AERA Open}%
 , 10%
@@ -161,7 +169,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 (3)%
 , 581-590.
 
-  \item Goldhaber, D., Kane, T.J., McEachin, A., Morton, E., Patterson, T., \& Staiger, D.O. (2023).
+  \item \#Goldhaber, D., Kane, T.J., McEachin, A., Morton, E., Patterson, T., \& Staiger, D.O. (2023).
   ``The Educational Consequences of Remote and Hybrid Instruction During the Pandemic.''
   \textit{American Economic Review: Insights}%
 , 5%
@@ -183,7 +191,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 (2)%
 , 152-169.
 
-  \item Kho, A., Zimmer, R., \& McEachin, A. (2022).
+  \item \#Kho, A., Zimmer, R., \& McEachin, A. (2022).
   ``A descriptive analysis of cream-skimming and pushout in choice versus traditional public schools.''
   \textit{Education Finance and Policy}%
 , 17%
@@ -198,7 +206,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 , 1197-1229.
   \textbf{Raymond Vernon Memorial Award}.
 
-  \item Barrett, N., McEachin, A., Mills, J., \& Valant, J. (2021).
+  \item \#Barrett, N., McEachin, A., Mills, J., \& Valant, J. (2021).
   ``Disparities in student discipline by race and family income.''
   \textit{Journal of Human Resources}%
 , 56%
@@ -285,7 +293,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 (3)%
 , 335-357.
 
-  \item Ahn, J., \& McEachin, A. (2017).
+  \item \#Ahn, J., \& McEachin, A. (2017).
   ``Student enrollment patterns and achievement in Ohio's online charter schools.''
   \textit{Educational Researcher}%
 , 46%
@@ -307,14 +315,14 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 (6)%
 , 358-366.
 
-  \item Domina, T., Hanselman, P., Hwang, N., \& McEachin, A. (2016).
+  \item \#Domina, T., Hanselman, P., Hwang, N., \& McEachin, A. (2016).
   ``Detracking and tracking up: Mathematics course placements in California middle schools, 2003-2013.''
   \textit{American Educational Research Journal}%
 , 53%
 (4)%
 , 1229-1266.
 
-  \item Welsh, R., Duque, M., \& McEachin, A. (2016).
+  \item \#Welsh, R., Duque, M., \& McEachin, A. (2016).
   ``School choice, student mobility and school quality: Evidence from post-Katrina New Orleans.''
   \textit{Education Finance and Policy}%
 , 11%
@@ -322,7 +330,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 , 150-176.
   Selected Media: Inside Sources.
 
-  \item Domina, T., McEachin, A., Penner, A., \& Penner, E. (2015).
+  \item \#Domina, T., McEachin, A., Penner, A., \& Penner, E. (2015).
   ``Aiming high and falling short: California's 8th grade algebra-for-all effort.''
   \textit{Educational Evaluation and Policy Analysis}%
 , 37%
@@ -330,7 +338,7 @@ Institute of Education Sciences Postdoctoral Fellow, School of Education
 , 275-295.
   Selected Media: Business Insider, Education Week.
 
-  \item Lankford, H., Loeb, S., McEachin, A., Miller, L.C., \& Wyckoff, J. (2014).
+  \item \#Lankford, H., Loeb, S., McEachin, A., Miller, L.C., \& Wyckoff, J. (2014).
   ``Who enters teaching? Encouraging evidence that the status of teaching is improving.''
   \textit{Educational Researcher}%
 , 43%
