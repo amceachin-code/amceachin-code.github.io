@@ -37,6 +37,23 @@ choice markets improve outcomes or simply reshuffle them.
 <div class="pub-card-wrapper">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
+  <h3 class="pub-card-title">Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity</h3>
+  <p class="pub-card-summary">The pandemic hit hardest for students who were already behind, and the gap between lower- and higher-achieving students widened significantly. But the more striking finding is what drove that widening: the school a student attended explains about three-quarters of the achievement gap growth in math. Pandemic learning loss wasn't just about individual circumstances. School and district decisions mattered enormously, which means targeted, school-level recovery strategies aren't just helpful, they're essential.</p>
+  <div class="pub-card-citation">
+    Callen, I., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., &amp; Morton, E. (Accepted). Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity. <em>Economics of Education Review</em>.
+  </div>
+  <div class="pub-card-links">
+    <a href="/uploads/publications/callen-2024.pdf" class="pub-card-link" target="_blank" rel="noopener">PDF</a>
+  </div>
+</div>
+<div class="pub-card-image">
+  <img src="/images/publications/callen-2024.png" alt="Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity" />
+</div>
+</div>
+
+<div class="pub-card-wrapper pub-card-wrapper--reverse">
+<div class="pub-card">
+  <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">Summer School as an Academic Recovery Strategy After COVID-19: Evidence From Summer 2023</h3>
   <p class="pub-card-summary">Summer school is back for round two, and the results are cautiously encouraging. Across eight large districts serving 400,000 students, 2023 summer programs again produced modest but real gains in math, while reading remained stubbornly flat. One bright spot: students who attended for a second consecutive summer did just as well, or better, than first-timers. That's good news for districts betting on summer school as a long-term recovery strategy. It won't close the gap overnight, but it keeps working for kids who keep showing up.</p>
   <div class="pub-card-citation">
@@ -51,7 +68,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper pub-card-wrapper--reverse">
+<div class="pub-card-wrapper">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">Impacts of Academic Recovery Interventions on Student Achievement in 2022 to 2023</h3>
@@ -68,7 +85,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper">
+<div class="pub-card-wrapper pub-card-wrapper--reverse">
 <div class="pub-card">
   <span class="pub-card-type-badge">Working Paper</span>
   <h3 class="pub-card-title">A Broader View of Recovery: Exploring Non-Test Student Outcomes in the Wake of the COVID-19 Pandemic</h3>
@@ -85,7 +102,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper pub-card-wrapper--reverse">
+<div class="pub-card-wrapper">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">Summer School as a Learning Loss Recovery Strategy After COVID-19: Evidence from Summer 2022</h3>
@@ -102,7 +119,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper">
+<div class="pub-card-wrapper pub-card-wrapper--reverse">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">Combined Schools as a (Non) Protective Factor During the COVID-19 Pandemic: Exploring Middle School Transitions Under Typical versus Atypical School Conditions</h3>
@@ -119,7 +136,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper pub-card-wrapper--reverse">
+<div class="pub-card-wrapper">
 <div class="pub-card">
   <span class="pub-card-type-badge">Report</span>
   <h3 class="pub-card-title">Implementing programs to align, accelerate, and extend student learning</h3>
@@ -148,7 +165,7 @@ choice markets improve outcomes or simply reshuffle them.
   </div>
 </div>
 
-<div class="pub-card-wrapper">
+<div class="pub-card-wrapper pub-card-wrapper--reverse">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">The Impact and Implementation of Academic Interventions During COVID-19: Evidence from the Road to Recovery Project</h3>
@@ -165,7 +182,7 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 </div>
 
-<div class="pub-card-wrapper pub-card-wrapper--reverse">
+<div class="pub-card-wrapper">
 <div class="pub-card">
   <span class="pub-card-type-badge">Journal Article</span>
   <h3 class="pub-card-title">Testing an explanation for summer learning loss: Differential examinee effort between spring and fall</h3>
@@ -179,23 +196,6 @@ choice markets improve outcomes or simply reshuffle them.
 </div>
 <div class="pub-card-image">
   <img src="/images/publications/kuhfeld-2024.png" alt="Testing an explanation for summer learning loss: Differential examinee effort between spring and fall" />
-</div>
-</div>
-
-<div class="pub-card-wrapper">
-<div class="pub-card">
-  <span class="pub-card-type-badge">Working Paper</span>
-  <h3 class="pub-card-title">Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity</h3>
-  <p class="pub-card-summary">The pandemic hit hardest for students who were already behind, and the gap between lower- and higher-achieving students widened significantly. But the more striking finding is what drove that widening: the school a student attended explains about three-quarters of the achievement gap growth in math. Pandemic learning loss wasn't just about individual circumstances. School and district decisions mattered enormously, which means targeted, school-level recovery strategies aren't just helpful, they're essential.</p>
-  <div class="pub-card-citation">
-    Callen, I., Goldhaber, D., Kane, T.J., McDonald, A., McEachin, A., &amp; Morton, E. (2024). Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity.
-  </div>
-  <div class="pub-card-links">
-    <a href="/uploads/publications/callen-2024.pdf" class="pub-card-link" target="_blank" rel="noopener">PDF</a>
-  </div>
-</div>
-<div class="pub-card-image">
-  <img src="/images/publications/callen-2024.png" alt="Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity" />
 </div>
 </div>
 

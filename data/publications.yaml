@@ -40,6 +40,28 @@ publications:
   # PEER-REVIEWED JOURNAL ARTICLES
   # ============================================================
 
+  - id: callen-2024-pandemic-heterogeneity
+    type: journal
+    theme: disrupted_learning
+    title: "Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity"
+    authors:
+      - "Callen, I."
+      - "Goldhaber, D."
+      - "Kane, T.J."
+      - "McDonald, A."
+      - "McEachin, A."
+      - "Morton, E."
+    year: 2026
+    journal: "Economics of Education Review"
+    status: "Accepted"
+    alphabetical: true
+    featured: false
+    summary: "The pandemic hit hardest for students who were already behind, and the gap between lower- and higher-achieving students widened significantly. But the more striking finding is what drove that widening: the school a student attended explains about three-quarters of the achievement gap growth in math. Pandemic learning loss wasn't just about individual circumstances. School and district decisions mattered enormously, which means targeted, school-level recovery strategies aren't just helpful, they're essential."
+    image: "callen-2024.png"
+    links:
+      - label: "PDF"
+        url: "/uploads/publications/callen-2024.pdf"
+
   - id: bolyard-2025-summer-2023
     type: journal
     theme: disrupted_learning
@@ -778,27 +800,6 @@ publications:
     links:
       - label: "PDF"
         url: "/uploads/publications/callen-2026.pdf"
-
-  - id: callen-2024-pandemic-heterogeneity
-    type: working_paper
-    theme: disrupted_learning
-    title: "Pandemic Learning Loss by Student Baseline Achievement: Extent and Sources of Heterogeneity"
-    authors:
-      - "Callen, I."
-      - "Goldhaber, D."
-      - "Kane, T.J."
-      - "McDonald, A."
-      - "McEachin, A."
-      - "Morton, E."
-    year: 2024
-    series: "CALDER Working Paper No. 292-0224"
-    alphabetical: true
-    featured: false
-    summary: "The pandemic hit hardest for students who were already behind, and the gap between lower- and higher-achieving students widened significantly. But the more striking finding is what drove that widening: the school a student attended explains about three-quarters of the achievement gap growth in math. Pandemic learning loss wasn't just about individual circumstances. School and district decisions mattered enormously, which means targeted, school-level recovery strategies aren't just helpful, they're essential."
-    image: "callen-2024.png"
-    links:
-      - label: "PDF"
-        url: "/uploads/publications/callen-2024.pdf"
 
   # ============================================================
   # REPORTS
