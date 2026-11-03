@@ -2,9 +2,10 @@
 Tests for the hand-made Students & Guardians tools page and its menu entry.
 
 The page links to tools that live in their own repos and are served by
-GitHub Pages under this domain, so these tests guard the pieces that
-connect them: the page must survive sync_hugo.py, appear in the menu, and
-link to each tool by its repo path.
+GitHub Pages: the grades guide under this domain, the math worksheets and
+Times Tables Games at their own hearthandwit.com addresses since November
+2026. These tests guard the pieces that connect them: the page must survive
+sync_hugo.py, appear in the menu, and link to each tool at its address.
 
 Run with: python -m pytest tests/
 """
@@ -31,10 +32,18 @@ def test_menu_links_to_tools_page():
     assert entry["name"] == "Students & Guardians"
 
 
-def test_page_links_each_tool_by_repo_path():
+WORKSHEETS = "https://worksheets.hearthandwit.com/"
+GAMES = "https://timestables.hearthandwit.com/"
+
+
+def test_page_links_each_tool_at_its_address():
     text = (TOOLS_DIR / "_index.md").read_text()
-    for repo in ["grade-inflation", "multiplication-worksheet", "times-tables-games"]:
-        assert f"](/{repo}/)" in text
+    assert "](/grade-inflation/)" in text
+    assert f"]({WORKSHEETS})" in text
+    assert f"]({GAMES})" in text
+    # The apps moved off this domain; nothing may still point at their old paths.
+    assert "/multiplication-worksheet/" not in text.replace("github.com/amceachin-code/multiplication-worksheet", "")
+    assert "/times-tables-games/" not in text
     # Only the worksheets show their repo; grade-inflation links to the tool alone.
     assert "https://github.com/amceachin-code/multiplication-worksheet" in text
     assert "https://github.com/amceachin-code/grade-inflation" not in text
@@ -43,7 +52,7 @@ def test_page_links_each_tool_by_repo_path():
 def test_page_links_division_worksheet():
     # The division tool lives in a subfolder of the multiplication-worksheet repo.
     text = (TOOLS_DIR / "_index.md").read_text()
-    assert "](/multiplication-worksheet/division/)" in text
+    assert f"]({WORKSHEETS}division/)" in text
 
 
 def test_page_links_color_by_number_under_math_worksheets():
@@ -51,4 +60,10 @@ def test_page_links_color_by_number_under_math_worksheets():
     # too, and belongs with the other worksheets.
     text = (TOOLS_DIR / "_index.md").read_text()
     section = text.split("## Math Worksheets", 1)[1].split("\n## ", 1)[0]
-    assert "](/multiplication-worksheet/color-by-number/)" in section
+    assert f"]({WORKSHEETS}color-by-number/)" in section
+
+
+def test_games_links_name_its_privacy_and_accessibility_pages():
+    text = (TOOLS_DIR / "_index.md").read_text()
+    assert f"]({GAMES}privacy/)" in text
+    assert f"]({GAMES}accessibility/)" in text
